@@ -6,6 +6,7 @@ import SearchBox from "./components/SearchBox";
 
 function App() {
   const savedNotes = JSON.parse(localStorage.getItem('react-notes-data'))
+
   const [notes, setNotes] = useState(savedNotes ?? [
     {
       id: nanoid(),
